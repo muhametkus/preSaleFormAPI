@@ -1,0 +1,29 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using PreSaleForm.Application.Common.Interfaces;
+using PreSaleForm.Infrastructure.Persistence;
+using PreSaleForm.Infrastructure.Services;
+
+namespace PreSaleForm.Infrastructure.DependencyInjection;
+
+public static class InfrastructureServiceRegistration
+{
+    public static IServiceCollection AddInfrastructureServices(
+        this IServiceCollection services,
+        IConfiguration configuration)
+    {
+        // PostgreSQL bağlantısı
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+
+        // DbContext interface binding (Application katmanı kullanacak)
+        services.AddScoped<IApplicationDbContext>(provider =>
+            provider.GetRequiredService<ApplicationDbContext>());
+        
+        services.AddScoped<IPdfService, PdfService>();
+
+
+        return services;
+    }
+}

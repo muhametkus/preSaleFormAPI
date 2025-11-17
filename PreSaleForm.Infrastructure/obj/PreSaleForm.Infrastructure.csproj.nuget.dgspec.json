@@ -1,0 +1,224 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj",
+        "projectName": "PreSaleForm.Application",
+        "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj",
+        "packagesPath": "/Users/muhammetkus/.nuget/packages/",
+        "outputPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/muhammetkus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj": {
+                "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj",
+        "projectName": "PreSaleForm.Domain",
+        "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj",
+        "packagesPath": "/Users/muhammetkus/.nuget/packages/",
+        "outputPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/muhammetkus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj",
+        "projectName": "PreSaleForm.Infrastructure",
+        "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj",
+        "packagesPath": "/Users/muhammetkus/.nuget/packages/",
+        "outputPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/muhammetkus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj": {
+                "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj"
+              },
+              "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj": {
+                "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
