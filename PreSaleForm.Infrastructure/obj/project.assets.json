@@ -1172,11 +1172,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj",
+      "projectUniqueName": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj",
       "projectName": "PreSaleForm.Infrastructure",
-      "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj",
+      "projectPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj",
       "packagesPath": "/Users/muhammetkus/.nuget/packages/",
-      "outputPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/",
+      "outputPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/muhammetkus/.nuget/NuGet/NuGet.Config"
@@ -1191,11 +1191,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj": {
-              "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj"
+            "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj": {
+              "projectPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj"
             },
-            "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj": {
-              "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj"
+            "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj": {
+              "projectPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj"
             }
           }
         }

@@ -7,6 +7,8 @@ public class PreSaleFormDetailDto
     public decimal TotalAmount { get; set; }
     public decimal PaidAmount { get; set; }
     public decimal RemainingAmount { get; set; }
+    public decimal? DiscountAmount { get; set; }
+    public decimal? DiscountedAmount { get; set; }
     public DateTime CreatedAt { get; set; }
     public string? PdfUrl { get; set; }
 

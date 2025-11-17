@@ -36,6 +36,8 @@ public class GetPreSaleFormByIdQueryHandler :
             TotalAmount = form.TotalAmount,
             PaidAmount = form.PaidAmount,
             RemainingAmount = form.RemainingAmount,
+            DiscountAmount = form.DiscountAmount,
+            DiscountedAmount = form.DiscountedAmount,
             CreatedAt = form.CreatedAt,
             PdfUrl = form.PdfFilePath,
 

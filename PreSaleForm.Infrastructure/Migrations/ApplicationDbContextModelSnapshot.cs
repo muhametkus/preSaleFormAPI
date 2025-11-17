@@ -28,6 +28,12 @@ namespace PreSaleForm.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<bool?>("AksesuarDahilMi")
+                        .HasColumnType("boolean");
+
+                    b.Property<decimal?>("AksesuarUcreti")
+                        .HasColumnType("numeric");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
@@ -40,6 +46,24 @@ namespace PreSaleForm.Infrastructure.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)");
+
+                    b.Property<decimal?>("DiscountAmount")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal?>("DiscountedAmount")
+                        .HasColumnType("numeric");
+
+                    b.Property<bool?>("FabrikaTeslimMi")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool?>("MontajDahilMi")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool?>("NakliyeDahilMi")
+                        .HasColumnType("boolean");
+
+                    b.Property<decimal?>("NakliyeUcreti")
+                        .HasColumnType("numeric");
 
                     b.Property<string>("Note")
                         .HasMaxLength(1000)
@@ -54,6 +78,9 @@ namespace PreSaleForm.Infrastructure.Migrations
 
                     b.Property<decimal>("RemainingAmount")
                         .HasColumnType("numeric");
+
+                    b.Property<string>("SecilenAksesuar")
+                        .HasColumnType("text");
 
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("numeric");

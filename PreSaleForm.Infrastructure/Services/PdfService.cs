@@ -379,6 +379,82 @@ public class PdfService : IPdfService
                                     .FontSize(9)
                                     .FontColor("#1F2937");
                             }
+
+                            // Aksesuar ücreti varsa ek satır ekle
+                            if (form.AksesuarUcreti.HasValue && form.AksesuarUcreti.Value > 0)
+                            {
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text(form.SecilenAksesuar ?? "Aksesuar")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text($"{form.AksesuarUcreti.Value:N0} TL")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+                            }
                         });
                     });
 
@@ -423,6 +499,53 @@ public class PdfService : IPdfService
                                 .Text($"{form.TotalAmount:N0} TL")
                                 .Bold()
                                 .FontSize(12);
+
+                            // İndirim Tutarı (varsa göster)
+                            if (form.DiscountAmount.HasValue && form.DiscountAmount.Value > 0)
+                            {
+                                t.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Background("#F9FAFB")
+                                    .Padding(10)
+                                    .Text("İndirim Tutarı")
+                                    .SemiBold()
+                                    .FontSize(12);
+
+                                t.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(10)
+                                    .AlignRight()
+                                    .Text($"-{form.DiscountAmount.Value:N0} TL")
+                                    .Bold()
+                                    .FontSize(12)
+                                    .FontColor("#DC2626");
+                            }
+
+                            // İndirimli Son Fiyat (varsa göster)
+                            if (form.DiscountedAmount.HasValue && form.DiscountedAmount.Value > 0)
+                            {
+                                t.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Background("#F9FAFB")
+                                    .Padding(10)
+                                    .Text("İndirimli Son Fiyat")
+                                    .SemiBold()
+                                    .FontSize(12)
+                                    .FontColor("#059669");
+
+                                t.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(10)
+                                    .AlignRight()
+                                    .Text($"{form.DiscountedAmount.Value:N0} TL")
+                                    .Bold()
+                                    .FontSize(12)
+                                    .FontColor("#059669");
+                            }
 
                             // Ödenen Tutar
                             t.Cell()
@@ -481,10 +604,46 @@ public class PdfService : IPdfService
                             .FontSize(13)
                             .FontColor("#374151");
 
-                        x.Item().PaddingTop(5).Text(
-                            "Bu form, müşteri tarafından onaylanan ön satış koşullarını içermektedir. " +
+                        // Dinamik şartlar metni
+                        var sartlarMetni = "Bu form, müşteri tarafından onaylanan ön satış koşullarını içermektedir. " +
                             "Ölçü, renk ve diğer tüm detayların doğruluğu müşteriye aittir. " +
-                            "Üretim sürecinde bu forma uyulacaktır.")
+                            "Üretim sürecinde bu forma uyulacaktır.";
+
+                        if (form.MontajDahilMi == true)
+                        {
+                            sartlarMetni += "\n\nAnlaşılan şartlara montaj hizmeti dahildir.";
+                        }
+                        else
+                        {
+                            sartlarMetni += "\n\nAnlaşılan şartlara montaj hizmeti dahil değildir. Demonte olarak teslim edilecektir.";
+
+                            // Montaj dahil değilse nakliye ve teslim bilgilerini ekle
+                            if (form.NakliyeDahilMi == true)
+                            {
+                                sartlarMetni += " Hizmete nakliye dahildir.";
+                            }
+                            else if (form.NakliyeDahilMi == false)
+                            {
+                                sartlarMetni += " Hizmete nakliye dahil değildir.";
+                            }
+
+                            if (form.FabrikaTeslimMi == true)
+                            {
+                                sartlarMetni += " Fabrikadan teslim edilecektir.";
+                            }
+
+                            // Aksesuar bilgilerini ekle
+                            if (form.AksesuarDahilMi == true)
+                            {
+                                sartlarMetni += " Aksesuar (Kapı Kolu, Kilit, Menteşe, Fitil) dahildir.";
+                            }
+                            else if (form.AksesuarDahilMi == false)
+                            {
+                                sartlarMetni += " Aksesuar (Kapı Kolu, Kilit, Menteşe, Fitil) hariçtir.";
+                            }
+                        }
+
+                        x.Item().PaddingTop(5).Text(sartlarMetni)
                             .FontSize(9)
                             .FontColor("#6B7280")
                             .LineHeight(1.5f);

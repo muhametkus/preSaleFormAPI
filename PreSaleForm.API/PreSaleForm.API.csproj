@@ -21,4 +21,19 @@
     <ProjectReference Include="..\PreSaleForm.Infrastructure\PreSaleForm.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_2b18065e-9bc5-4311-9041-7a585180dcdf.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_64166042-dd2a-47ed-89e1-a83da9890aa7.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_745f657c-695b-468e-86a5-380f9be334c6.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_77e01ce2-6540-4e14-ad85-35e1f0721a42.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_78189b37-f047-4473-bbbb-98f30b581697.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_7d2bed3b-0286-4dd5-b037-30e949dcbd18.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_85742cf2-0763-4acc-9301-de2e6ea10e5d.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_92def4fd-4ad6-410a-b84b-a0dabb6295c0.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_b3bb6f7d-b44c-4959-9179-af8b15f6eea8.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_b7814698-619e-42a0-b4f2-e737188a29f4.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_e78d7f1f-b9fd-4cc9-8f38-34175b9574ca.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\pdf\presale\PreSale_e79805a1-8e69-4290-b810-2c9a3b62b11c.pdf" />
+  </ItemGroup>
+
 </Project>

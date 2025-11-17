@@ -5,22 +5,18 @@ using PreSaleForm.Domain.Entities;
 
 namespace PreSaleForm.Application.PreSaleForms.Commands.Create;
 
-public class CreatePreSaleFormCommandHandler 
+public class CreatePreSaleFormCommandHandler
     : IRequestHandler<CreatePreSaleFormCommand, CreatePreSaleFormResponse>
 {
     private readonly IApplicationDbContext _context;
     private readonly IMapper _mapper;
-    private readonly IPdfService _pdfService;
-
 
     public CreatePreSaleFormCommandHandler(
         IApplicationDbContext context,
-        IMapper mapper,
-        IPdfService pdfService)
+        IMapper mapper)
     {
         _context = context;
         _mapper = mapper;
-        _pdfService = pdfService;
     }
 
 
@@ -33,28 +29,20 @@ public class CreatePreSaleFormCommandHandler
         entity.Id = Guid.NewGuid();
         entity.CreatedAt = DateTime.UtcNow;
 
-// ürünleri ekle
+        // ürünleri ekle
         foreach (var productDto in command.Request.Products)
         {
             var product = _mapper.Map<PreSaleFormProduct>(productDto);
             product.Id = Guid.NewGuid();
             product.PreSaleFormId = entity.Id;
-    
+
             entity.Products.Add(product);
         }
 
         _context.PreSaleForms.Add(entity);
         await _context.SaveChangesAsync(cancellationToken);
 
-
-        // PDF üret
-        var pdfUrl = await _pdfService.GeneratePreSaleFormPdfAsync(entity, cancellationToken);
-
-        entity.PdfFilePath = pdfUrl;
-        await _context.SaveChangesAsync(cancellationToken);
-
         var response = _mapper.Map<CreatePreSaleFormResponse>(entity);
-        response.PdfUrl = pdfUrl;
 
         return response;
     }

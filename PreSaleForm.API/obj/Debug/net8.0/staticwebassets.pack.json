@@ -1,56 +1,20 @@
 {
   "Files": [
     {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/logo.png",
+      "Id": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.API/wwwroot/logo.png",
       "PackagePath": "staticwebassets/logo.png"
     },
     {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/logo2.png",
+      "Id": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.API/wwwroot/logo2.png",
       "PackagePath": "staticwebassets/logo2.png"
     },
     {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_2b18065e-9bc5-4311-9041-7a585180dcdf.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_2b18065e-9bc5-4311-9041-7a585180dcdf.pdf"
+      "Id": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_44bdef5b-1ca3-473b-971d-bfdc4dabcc51.pdf",
+      "PackagePath": "staticwebassets/pdf/presale/PreSale_44bdef5b-1ca3-473b-971d-bfdc4dabcc51.pdf"
     },
     {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_64166042-dd2a-47ed-89e1-a83da9890aa7.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_64166042-dd2a-47ed-89e1-a83da9890aa7.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_745f657c-695b-468e-86a5-380f9be334c6.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_745f657c-695b-468e-86a5-380f9be334c6.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_77e01ce2-6540-4e14-ad85-35e1f0721a42.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_77e01ce2-6540-4e14-ad85-35e1f0721a42.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_78189b37-f047-4473-bbbb-98f30b581697.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_78189b37-f047-4473-bbbb-98f30b581697.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_7d2bed3b-0286-4dd5-b037-30e949dcbd18.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_7d2bed3b-0286-4dd5-b037-30e949dcbd18.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_85742cf2-0763-4acc-9301-de2e6ea10e5d.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_85742cf2-0763-4acc-9301-de2e6ea10e5d.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_92def4fd-4ad6-410a-b84b-a0dabb6295c0.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_92def4fd-4ad6-410a-b84b-a0dabb6295c0.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_b3bb6f7d-b44c-4959-9179-af8b15f6eea8.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_b3bb6f7d-b44c-4959-9179-af8b15f6eea8.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_e78d7f1f-b9fd-4cc9-8f38-34175b9574ca.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_e78d7f1f-b9fd-4cc9-8f38-34175b9574ca.pdf"
-    },
-    {
-      "Id": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_e79805a1-8e69-4290-b810-2c9a3b62b11c.pdf",
-      "PackagePath": "staticwebassets/pdf/presale/PreSale_e79805a1-8e69-4290-b810-2c9a3b62b11c.pdf"
+      "Id": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_74f24de5-3f90-424c-aeab-c43d68c8ee25.pdf",
+      "PackagePath": "staticwebassets/pdf/presale/PreSale_74f24de5-3f90-424c-aeab-c43d68c8ee25.pdf"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PreSaleForm.API.Microsoft.AspNetCore.StaticWebAssets.props",

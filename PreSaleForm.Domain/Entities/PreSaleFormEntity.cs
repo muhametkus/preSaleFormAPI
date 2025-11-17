@@ -13,11 +13,26 @@ public class PreSaleFormEntity
     public decimal PaidAmount { get; set; }
     public decimal RemainingAmount { get; set; }
 
+    // İndirim Bilgileri
+    public decimal? DiscountAmount { get; set; }
+    public decimal? DiscountedAmount { get; set; }
+
     // Ek Not
     public string? Note { get; set; }
 
     // PDF Dosya Yolu
     public string? PdfFilePath { get; set; }
+
+    // Hizmet Bilgileri
+    public bool? MontajDahilMi { get; set; }
+    public bool? NakliyeDahilMi { get; set; }
+    public bool? FabrikaTeslimMi { get; set; }
+
+    // Aksesuar Bilgileri
+    public bool? AksesuarDahilMi { get; set; }
+    public decimal? AksesuarUcreti { get; set; }
+    public decimal? NakliyeUcreti { get; set; }
+    public string? SecilenAksesuar { get; set; }
 
     // Oluşturulma Tarihi
     public DateTime CreatedAt { get; set; }

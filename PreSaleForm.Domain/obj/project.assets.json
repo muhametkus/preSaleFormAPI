@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj",
+      "projectUniqueName": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj",
       "projectName": "PreSaleForm.Domain",
-      "projectPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj",
+      "projectPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj",
       "packagesPath": "/Users/muhammetkus/.nuget/packages/",
-      "outputPath": "/Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/",
+      "outputPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/muhammetkus/.nuget/NuGet/NuGet.Config"

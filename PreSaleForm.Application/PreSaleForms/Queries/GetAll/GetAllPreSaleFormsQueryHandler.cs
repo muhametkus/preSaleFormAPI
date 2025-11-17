@@ -25,6 +25,9 @@ public class GetAllPreSaleFormsQueryHandler :
                 Id = x.Id,
                 CustomerFullName = x.CustomerFullName,
                 CustomerPhone = x.CustomerPhone,
+                TotalAmount = x.TotalAmount,
+                DiscountAmount = x.DiscountAmount,
+                DiscountedAmount = x.DiscountedAmount,
                 CreatedAt = x.CreatedAt,
                 PdfUrl = x.PdfFilePath
             })

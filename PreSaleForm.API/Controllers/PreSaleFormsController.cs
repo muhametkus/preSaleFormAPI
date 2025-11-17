@@ -1,6 +1,10 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using PreSaleForm.Application.PreSaleForms.Commands.Create;
+using PreSaleForm.Application.PreSaleForms.Commands.Delete;
+using PreSaleForm.Application.PreSaleForms.Commands.DeleteAll;
+using PreSaleForm.Application.PreSaleForms.Commands.GeneratePdf;
+using PreSaleForm.Application.PreSaleForms.Commands.Update;
 using PreSaleForm.Application.PreSaleForms.Queries.GetAll;
 using PreSaleForm.Application.PreSaleForms.Queries.GetById;
 
@@ -31,6 +35,17 @@ public class PreSaleFormsController : ControllerBase
         return Ok(result);
     }
 
+    // GENERATE PDF
+    [HttpPost("{id:guid}/generate-pdf")]
+    public async Task<ActionResult<GeneratePdfResponse>> GeneratePdf(
+        Guid id,
+        CancellationToken cancellationToken)
+    {
+        var cmd = new GeneratePdfCommand { FormId = id };
+        var result = await _mediator.Send(cmd, cancellationToken);
+        return Ok(result);
+    }
+
     // GET ALL
     [HttpGet]
     public async Task<ActionResult<List<PreSaleFormListDto>>> GetAll(CancellationToken cancellationToken)
@@ -48,6 +63,52 @@ public class PreSaleFormsController : ControllerBase
         if (result == null)
             return NotFound("Form bulunamadı.");
 
+        return Ok(result);
+    }
+
+    // UPDATE
+    [HttpPut]
+    [Route("{id:guid}")]
+    public async Task<ActionResult<UpdatePreSaleFormResponse>> Update(
+        Guid id,
+        [FromBody] UpdatePreSaleFormRequest request,
+        CancellationToken cancellationToken)
+    {
+        try
+        {
+            var cmd = new UpdatePreSaleFormCommand { Id = id, Request = request };
+            var result = await _mediator.Send(cmd, cancellationToken);
+            return Ok(result);
+        }
+        catch (KeyNotFoundException)
+        {
+            return NotFound("Form bulunamadı.");
+        }
+    }
+
+    // DELETE
+    [HttpDelete("{id:guid}")]
+    public async Task<ActionResult<DeletePreSaleFormResponse>> Delete(Guid id, CancellationToken cancellationToken)
+    {
+        try
+        {
+            var cmd = new DeletePreSaleFormCommand { Id = id };
+            var result = await _mediator.Send(cmd, cancellationToken);
+            return Ok(result);
+        }
+        catch (KeyNotFoundException)
+        {
+            return NotFound("Form bulunamadı.");
+        }
+    }
+
+    // DELETE ALL
+    [HttpDelete]
+    [Route("all")]
+    public async Task<ActionResult<DeleteAllPreSaleFormsResponse>> DeleteAll(CancellationToken cancellationToken)
+    {
+        var cmd = new DeleteAllPreSaleFormsCommand();
+        var result = await _mediator.Send(cmd, cancellationToken);
         return Ok(result);
     }
 
