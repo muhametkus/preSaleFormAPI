@@ -35,12 +35,13 @@ WORKDIR /app
 # Copy published artifacts
 COPY --from=build /app/publish .
 
-# Create wwwroot + pdf folders
-RUN mkdir -p /app/wwwroot && \
-    mkdir -p /app/wwwroot/pdf/presale
+# Copy logo files from build stage first
+COPY --from=build /src/PreSaleForm.API/wwwroot/logo.png /app/wwwroot/logo.png
+COPY --from=build /src/PreSaleForm.API/wwwroot/logo2.png /app/wwwroot/logo2.png
 
-# Safe copy of logos (even if missing)
-COPY --from=build /src/PreSaleForm.API/wwwroot/ /app/wwwroot/ 2>/dev/null || true
+# Create pdf directory structure with proper permissions
+RUN mkdir -p /app/wwwroot/pdf/presale && \
+    chmod -R 755 /app/wwwroot
 
 # Environment vars
 ENV ASPNETCORE_URLS=http://+:8080
