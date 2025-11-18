@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PG0ZqGihcJg=",
+  "dgSpecHash": "ULyr9LWuuDw=",
   "success": true,
-  "projectFilePath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Muhammet KUS\\Desktop\\preSaleFormAPI\\PreSaleForm.Domain\\PreSaleForm.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Muhammet KUS\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\Muhammet KUS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\Muhammet KUS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.20\\microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

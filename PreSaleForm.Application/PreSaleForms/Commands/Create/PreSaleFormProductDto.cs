@@ -1,3 +1,5 @@
+namespace PreSaleForm.Application.PreSaleForms.Commands.Create;
+
 public class PreSaleFormProductDto
 {
     public string DoorModel { get; set; }

@@ -1,0 +1,6 @@
+C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Application\obj\Release\net8.0\PreSaleForm.Application.csproj.AssemblyReference.cache
+C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Application\obj\Release\net8.0\PreSaleForm.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Application\obj\Release\net8.0\PreSaleForm.Application.AssemblyInfoInputs.cache
+C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Application\obj\Release\net8.0\PreSaleForm.Application.AssemblyInfo.cs
+C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Application\obj\Release\net8.0\PreSaleForm.Application.csproj.CoreCompileInputs.cache
+C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Application\obj\Release\net8.0\PreSaleForm.Application.sourcelink.json

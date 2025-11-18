@@ -1,3 +1,5 @@
+namespace PreSaleForm.Application.PreSaleForms.Commands.Create;
+
 public class CreatePreSaleFormRequest
 {
     public string CustomerFullName { get; set; } = default!;

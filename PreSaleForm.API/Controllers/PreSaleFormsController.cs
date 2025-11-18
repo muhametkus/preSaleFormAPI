@@ -76,13 +76,14 @@ public class PreSaleFormsController : ControllerBase
     {
         try
         {
-            var cmd = new UpdatePreSaleFormCommand { Id = id, Request = request };
+            request.Id = id;
+            var cmd = new UpdatePreSaleFormCommand { Request = request };
             var result = await _mediator.Send(cmd, cancellationToken);
             return Ok(result);
         }
-        catch (KeyNotFoundException)
+        catch (Exception ex)
         {
-            return NotFound("Form bulunamadı.");
+            return NotFound(ex.Message);
         }
     }
 

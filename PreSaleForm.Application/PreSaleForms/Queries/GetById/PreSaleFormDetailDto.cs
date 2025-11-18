@@ -1,3 +1,7 @@
+using PreSaleForm.Application.PreSaleForms.Commands.Create;
+
+namespace PreSaleForm.Application.PreSaleForms.Queries.GetById;
+
 public class PreSaleFormDetailDto
 {
     public Guid Id { get; set; }

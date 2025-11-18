@@ -809,19 +809,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/muhammetkus/.nuget/packages/": {}
+    "C:\\Users\\Muhammet KUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Muhammet KUS\\Desktop\\preSaleFormAPI\\PreSaleForm.Application\\PreSaleForm.Application.csproj",
       "projectName": "PreSaleForm.Application",
-      "projectPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Application/PreSaleForm.Application.csproj",
-      "packagesPath": "/Users/muhammetkus/.nuget/packages/",
-      "outputPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Application/obj/",
+      "projectPath": "C:\\Users\\Muhammet KUS\\Desktop\\preSaleFormAPI\\PreSaleForm.Application\\PreSaleForm.Application.csproj",
+      "packagesPath": "C:\\Users\\Muhammet KUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Muhammet KUS\\Desktop\\preSaleFormAPI\\PreSaleForm.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/muhammetkus/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Muhammet KUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -833,8 +833,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj": {
-              "projectPath": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/PreSaleForm.Domain.csproj"
+            "C:\\Users\\Muhammet KUS\\Desktop\\preSaleFormAPI\\PreSaleForm.Domain\\PreSaleForm.Domain.csproj": {
+              "projectPath": "C:\\Users\\Muhammet KUS\\Desktop\\preSaleFormAPI\\PreSaleForm.Domain\\PreSaleForm.Domain.csproj"
             }
           }
         }
@@ -848,7 +848,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -882,12 +883,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
