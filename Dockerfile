@@ -12,48 +12,44 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Copy solution file
-COPY ["PreSaleForm.sln", "./"]
+# Copy solution + project files
+COPY PreSaleForm.sln ./
+COPY PreSaleForm.API/PreSaleForm.API.csproj PreSaleForm.API/
+COPY PreSaleForm.Application/PreSaleForm.Application.csproj PreSaleForm.Application/
+COPY PreSaleForm.Domain/PreSaleForm.Domain.csproj PreSaleForm.Domain/
+COPY PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj PreSaleForm.Infrastructure/
 
-# Copy project files
-COPY ["PreSaleForm.API/PreSaleForm.API.csproj", "PreSaleForm.API/"]
-COPY ["PreSaleForm.Application/PreSaleForm.Application.csproj", "PreSaleForm.Application/"]
-COPY ["PreSaleForm.Domain/PreSaleForm.Domain.csproj", "PreSaleForm.Domain/"]
-COPY ["PreSaleForm.Infrastructure/PreSaleForm.Infrastructure.csproj", "PreSaleForm.Infrastructure/"]
-
-# Restore dependencies
 RUN dotnet restore "PreSaleForm.API/PreSaleForm.API.csproj"
 
-# Copy all source files
+# Copy full source
 COPY . .
 
-# Build and publish
-WORKDIR "/src/PreSaleForm.API"
-RUN dotnet build "PreSaleForm.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
-RUN dotnet publish "PreSaleForm.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+# Publish
+WORKDIR /src/PreSaleForm.API
+RUN dotnet publish PreSaleForm.API.csproj -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # --- Final runtime image ---
 FROM base AS final
 WORKDIR /app
 
-# Copy published files
+# Copy published artifacts
 COPY --from=build /app/publish .
 
-# Create directories for PDF storage and ensure proper permissions
-RUN mkdir -p /app/wwwroot/pdf/presale && \
-    chmod -R 755 /app/wwwroot
+# Create wwwroot + pdf folders
+RUN mkdir -p /app/wwwroot && \
+    mkdir -p /app/wwwroot/pdf/presale
 
-# Copy only logo files (exclude pdf folder)
-COPY --from=build /src/PreSaleForm.API/wwwroot/logo*.png /app/wwwroot/ || true
+# Safe copy of logos (even if missing)
+COPY --from=build /src/PreSaleForm.API/wwwroot/ /app/wwwroot/ 2>/dev/null || true
 
-# Environment variables for ASP.NET Core
+# Environment vars
 ENV ASPNETCORE_URLS=http://+:8080
 ENV ASPNETCORE_ENVIRONMENT=Production
 
-# Volume for persistent PDF storage (optional, for Coolify)
+# Persist wwwroot (Coolify)
 VOLUME ["/app/wwwroot"]
 
-# Health check endpoint
+# Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8080/api/presaleforms/ping || exit 1
 
