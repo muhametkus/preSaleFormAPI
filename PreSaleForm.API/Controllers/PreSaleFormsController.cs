@@ -1,4 +1,5 @@
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PreSaleForm.Application.PreSaleForms.Commands.Create;
 using PreSaleForm.Application.PreSaleForms.Commands.Delete;
@@ -12,6 +13,7 @@ namespace PreSaleForm.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+
 public class PreSaleFormsController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -36,6 +38,7 @@ public class PreSaleFormsController : ControllerBase
     }
 
     // GENERATE PDF
+    [Authorize]
     [HttpPost("{id:guid}/generate-pdf")]
     public async Task<ActionResult<GeneratePdfResponse>> GeneratePdf(
         Guid id,
@@ -47,6 +50,8 @@ public class PreSaleFormsController : ControllerBase
     }
 
     // GET ALL
+    
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<List<PreSaleFormListDto>>> GetAll(CancellationToken cancellationToken)
     {
@@ -55,6 +60,7 @@ public class PreSaleFormsController : ControllerBase
     }
 
     // GET BY ID
+    [Authorize]
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<PreSaleFormDetailDto>> GetById(Guid id, CancellationToken cancellationToken)
     {
@@ -67,6 +73,7 @@ public class PreSaleFormsController : ControllerBase
     }
 
     // UPDATE
+    [Authorize]
     [HttpPut]
     [Route("{id:guid}")]
     public async Task<ActionResult<UpdatePreSaleFormResponse>> Update(
@@ -88,6 +95,7 @@ public class PreSaleFormsController : ControllerBase
     }
 
     // DELETE
+    [Authorize]
     [HttpDelete("{id:guid}")]
     public async Task<ActionResult<DeletePreSaleFormResponse>> Delete(Guid id, CancellationToken cancellationToken)
     {
@@ -104,6 +112,7 @@ public class PreSaleFormsController : ControllerBase
     }
 
     // DELETE ALL
+    [Authorize]
     [HttpDelete]
     [Route("all")]
     public async Task<ActionResult<DeleteAllPreSaleFormsResponse>> DeleteAll(CancellationToken cancellationToken)

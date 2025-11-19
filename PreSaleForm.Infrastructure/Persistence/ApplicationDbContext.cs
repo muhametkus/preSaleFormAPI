@@ -13,6 +13,8 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
 
     public DbSet<PreSaleFormEntity> PreSaleForms => Set<PreSaleFormEntity>();
     public DbSet<PreSaleFormProduct> PreSaleFormProducts => Set<PreSaleFormProduct>();
+    public DbSet<User> Users { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -59,6 +61,28 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
 
             entity.Property(x => x.Color)
                 .HasMaxLength(100);
+        });
+
+        // User
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.ToTable("Users");
+            entity.HasKey(x => x.Id);
+
+            entity.Property(x => x.FullName)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            entity.Property(x => x.Email)
+                .IsRequired()
+                .HasMaxLength(150);
+
+            entity.Property(x => x.PasswordHash)
+                .IsRequired()
+                .HasMaxLength(256);
+
+            entity.HasIndex(x => x.Email)
+                .IsUnique();
         });
     }
 }

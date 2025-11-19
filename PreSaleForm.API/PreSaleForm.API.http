@@ -4,3 +4,78 @@ GET {{PreSaleForm.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+# Auth endpoints
+POST {{PreSaleForm.API_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Test User",
+  "email": "test@example.com",
+  "password": "testpassword123"
+}
+
+###
+
+POST {{PreSaleForm.API_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "testpassword123"
+}
+
+###
+
+# Test invalid login
+POST {{PreSaleForm.API_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "wrongpassword"
+}
+
+###
+
+# Test validation errors
+POST {{PreSaleForm.API_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "",
+  "email": "invalid-email",
+  "password": "123"
+}
+
+###
+
+# Test protected endpoints (requires JWT token)
+GET {{PreSaleForm.API_HostAddress}}/api/PreSaleForms
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+###
+
+# Test PreSaleForm creation (requires JWT token)
+POST {{PreSaleForm.API_HostAddress}}/api/PreSaleForms
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "customerFullName": "Test Customer",
+  "customerPhone": "555-0123",
+  "note": "Test form",
+  "termsAccepted": true,
+  "products": [
+    {
+      "doorModel": "Model A",
+      "doorSurfaceType": "Wood",
+      "color": "Brown",
+      "quantity": 1,
+      "width": 80,
+      "height": 200
+    }
+  ]
+}
+
+###

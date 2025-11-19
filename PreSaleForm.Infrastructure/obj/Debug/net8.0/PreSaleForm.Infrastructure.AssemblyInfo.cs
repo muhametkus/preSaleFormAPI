@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreSaleForm.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f13ab9b0267aca7a1942294f90679f20d750411")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e8c3bf5f512808189d93c9711e587d26b462563")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreSaleForm.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreSaleForm.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

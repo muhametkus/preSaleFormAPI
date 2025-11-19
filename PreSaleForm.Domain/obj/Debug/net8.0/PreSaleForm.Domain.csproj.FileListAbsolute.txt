@@ -9,6 +9,18 @@
 /Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/refint/PreSaleForm.Domain.dll
 /Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.pdb
 /Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/ref/PreSaleForm.Domain.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/bin/Debug/net8.0/PreSaleForm.Domain.deps.json
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/bin/Debug/net8.0/PreSaleForm.Domain.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/bin/Debug/net8.0/PreSaleForm.Domain.pdb
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.AssemblyInfoInputs.cache
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.AssemblyInfo.cs
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.csproj.CoreCompileInputs.cache
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.sourcelink.json
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/refint/PreSaleForm.Domain.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.pdb
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/ref/PreSaleForm.Domain.dll
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/bin/Debug/net8.0/PreSaleForm.Domain.deps.json
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/bin/Debug/net8.0/PreSaleForm.Domain.dll
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/bin/Debug/net8.0/PreSaleForm.Domain.pdb
@@ -21,15 +33,3 @@
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/refint/PreSaleForm.Domain.dll
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/PreSaleForm.Domain.pdb
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Domain/obj/Debug/net8.0/ref/PreSaleForm.Domain.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\bin\Debug\net8.0\PreSaleForm.Domain.deps.json
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\bin\Debug\net8.0\PreSaleForm.Domain.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\bin\Debug\net8.0\PreSaleForm.Domain.pdb
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\PreSaleForm.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\PreSaleForm.Domain.AssemblyInfoInputs.cache
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\PreSaleForm.Domain.AssemblyInfo.cs
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\PreSaleForm.Domain.csproj.CoreCompileInputs.cache
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\PreSaleForm.Domain.sourcelink.json
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\PreSaleForm.Domain.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\refint\PreSaleForm.Domain.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\PreSaleForm.Domain.pdb
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Domain\obj\Debug\net8.0\ref\PreSaleForm.Domain.dll

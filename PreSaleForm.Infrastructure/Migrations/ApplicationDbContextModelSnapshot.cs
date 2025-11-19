@@ -142,6 +142,32 @@ namespace PreSaleForm.Infrastructure.Migrations
                     b.ToTable("PreSaleFormProducts", (string)null);
                 });
 
+            modelBuilder.Entity("PreSaleForm.Domain.Entities.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("PreSaleForm.Domain.Entities.PreSaleFormProduct", b =>
                 {
                     b.HasOne("PreSaleForm.Domain.Entities.PreSaleFormEntity", "PreSaleForm")

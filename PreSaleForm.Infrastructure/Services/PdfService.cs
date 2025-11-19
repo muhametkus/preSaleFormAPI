@@ -586,14 +586,6 @@ public class PdfService : IPdfService
                                 .FontSize(12)
                                 .FontColor("#DC2626");
                         });
-
-                        // Şartlar
-                        box.Item().Padding(10).DefaultTextStyle(x => x.FontSize(12))
-                            .Text(txt =>
-                            {
-                                txt.Span("Şartlar Kabul Edildi: ").SemiBold();
-                                txt.Span("Evet").SemiBold().FontColor("#15803D");
-                            });
                     });
 
                     // ---------------- SÖZLEŞME VE ŞARTLAR ----------------
@@ -650,12 +642,12 @@ public class PdfService : IPdfService
                     });
 
                     // ---------------- İMZA ALANLARI ----------------
-                    col.Item().PaddingTop(50).PaddingHorizontal(30).Row(r =>
+                    col.Item().PaddingTop(20).PaddingHorizontal(30).Row(r =>
                     {
                         // Müşteri İmzası
                         r.RelativeItem().Column(c =>
                         {
-                            c.Item().Height(40).Width(180).BorderBottom(1).BorderColor("#6B7280");
+                            c.Item().Height(20).Width(180).BorderBottom(1).BorderColor("#6B7280");
                             c.Item().PaddingTop(5).AlignCenter().Text("Müşteri İmzası")
                                 .FontSize(9)
                                 .SemiBold()
@@ -668,7 +660,7 @@ public class PdfService : IPdfService
                         // Firma Yetkilisi
                         r.RelativeItem().Column(c =>
                         {
-                            c.Item().Height(40).Width(180).BorderBottom(1).BorderColor("#6B7280");
+                            c.Item().Height(20).Width(180).BorderBottom(1).BorderColor("#6B7280");
                             c.Item().PaddingTop(5).AlignCenter().Text("Firma Yetkilisi")
                                 .FontSize(9)
                                 .SemiBold()

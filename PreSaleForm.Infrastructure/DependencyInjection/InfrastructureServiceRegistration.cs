@@ -22,6 +22,8 @@ public static class InfrastructureServiceRegistration
             provider.GetRequiredService<ApplicationDbContext>());
         
         services.AddScoped<IPdfService, PdfService>();
+        services.AddScoped<IJwtService, JwtService>();
+
 
 
         return services;

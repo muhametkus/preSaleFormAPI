@@ -34,6 +34,43 @@
 /Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/refint/PreSaleForm.Infrastructure.dll
 /Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.pdb
 /Users/muhammetkus/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/ref/PreSaleForm.Infrastructure.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/refint/PreSaleForm.Infrastructure.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.pdb
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Black.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-BlackItalic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Bold.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-BoldItalic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-ExtraBold.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-ExtraBoldItalic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-ExtraLight.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-ExtraLightItalic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Italic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Light.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-LightItalic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Medium.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-MediumItalic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Regular.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-SemiBold.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-SemiBoldItalic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Thin.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-ThinItalic.ttf
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/OFL.txt
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/PreSaleForm.Infrastructure.deps.json
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/PreSaleForm.Infrastructure.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/PreSaleForm.Infrastructure.pdb
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/PreSaleForm.Application.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/PreSaleForm.Domain.dll
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/PreSaleForm.Application.pdb
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/PreSaleForm.Domain.pdb
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.csproj.AssemblyReference.cache
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.AssemblyInfo.cs
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.csproj.CoreCompileInputs.cache
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.sourcelink.json
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleF.70F72C42.Up2Date
+C:/Users/Muhammet KUS/Desktop/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/ref/PreSaleForm.Infrastructure.dll
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Black.ttf
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-BlackItalic.ttf
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/bin/Debug/net8.0/LatoFont/Lato-Bold.ttf
@@ -71,40 +108,3 @@
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/refint/PreSaleForm.Infrastructure.dll
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/PreSaleForm.Infrastructure.pdb
 /Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.Infrastructure/obj/Debug/net8.0/ref/PreSaleForm.Infrastructure.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleForm.Infrastructure.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\refint\PreSaleForm.Infrastructure.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleForm.Infrastructure.pdb
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-Black.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-BlackItalic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-Bold.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-BoldItalic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-ExtraBold.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-ExtraBoldItalic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-ExtraLight.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-ExtraLightItalic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-Italic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-Light.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-LightItalic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-Medium.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-MediumItalic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-Regular.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-SemiBold.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-SemiBoldItalic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-Thin.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\Lato-ThinItalic.ttf
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\LatoFont\OFL.txt
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\PreSaleForm.Infrastructure.deps.json
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\PreSaleForm.Infrastructure.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\PreSaleForm.Infrastructure.pdb
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\PreSaleForm.Application.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\PreSaleForm.Domain.dll
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\PreSaleForm.Application.pdb
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\bin\Debug\net8.0\PreSaleForm.Domain.pdb
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleForm.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleForm.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleForm.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleForm.Infrastructure.AssemblyInfo.cs
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleForm.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleForm.Infrastructure.sourcelink.json
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\PreSaleF.70F72C42.Up2Date
-C:\Users\Muhammet KUS\Desktop\preSaleFormAPI\PreSaleForm.Infrastructure\obj\Debug\net8.0\ref\PreSaleForm.Infrastructure.dll
