@@ -22,6 +22,21 @@ namespace PreSaleForm.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("PreSaleForm.Domain.Entities.Category", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("PreSaleForm.Domain.Entities.PreSaleFormEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -53,6 +68,9 @@ namespace PreSaleForm.Infrastructure.Migrations
                     b.Property<decimal?>("DiscountedAmount")
                         .HasColumnType("numeric");
 
+                    b.Property<decimal?>("DismantlingUnitPrice")
+                        .HasColumnType("numeric");
+
                     b.Property<bool?>("FabrikaTeslimMi")
                         .HasColumnType("boolean");
 
@@ -69,6 +87,9 @@ namespace PreSaleForm.Infrastructure.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("character varying(1000)");
 
+                    b.Property<int?>("OldDoorCount")
+                        .HasColumnType("integer");
+
                     b.Property<decimal>("PaidAmount")
                         .HasColumnType("numeric");
 
@@ -83,6 +104,9 @@ namespace PreSaleForm.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.Property<decimal>("TotalAmount")
+                        .HasColumnType("numeric");
+
+                    b.Property<decimal?>("TotalDismantlingPrice")
                         .HasColumnType("numeric");
 
                     b.HasKey("Id");
@@ -142,6 +166,35 @@ namespace PreSaleForm.Infrastructure.Migrations
                     b.ToTable("PreSaleFormProducts", (string)null);
                 });
 
+            modelBuilder.Entity("PreSaleForm.Domain.Entities.Product", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("PriceWithAssembly")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("PriceWithoutAssembly")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Products");
+                });
+
             modelBuilder.Entity("PreSaleForm.Domain.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -153,19 +206,25 @@ namespace PreSaleForm.Infrastructure.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
 
                     b.Property<string>("FullName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(256)
+                        .HasColumnType("character varying(256)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("PreSaleForm.Domain.Entities.PreSaleFormProduct", b =>
@@ -177,6 +236,22 @@ namespace PreSaleForm.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("PreSaleForm");
+                });
+
+            modelBuilder.Entity("PreSaleForm.Domain.Entities.Product", b =>
+                {
+                    b.HasOne("PreSaleForm.Domain.Entities.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("PreSaleForm.Domain.Entities.Category", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("PreSaleForm.Domain.Entities.PreSaleFormEntity", b =>

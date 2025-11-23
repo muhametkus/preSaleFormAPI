@@ -34,6 +34,11 @@ public class PreSaleFormEntity
     public decimal? NakliyeUcreti { get; set; }
     public string? SecilenAksesuar { get; set; }
 
+    // Söküm Bilgileri
+    public int? OldDoorCount { get; set; } // Sökülecek eski kapı adedi
+    public decimal? DismantlingUnitPrice { get; set; } // Söküm ücreti (birim fiyat)
+    public decimal? TotalDismantlingPrice { get; set; } // Toplam söküm ücreti
+
     // Oluşturulma Tarihi
     public DateTime CreatedAt { get; set; }
 

@@ -11,9 +11,11 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
     }
 
-    public DbSet<PreSaleFormEntity> PreSaleForms => Set<PreSaleFormEntity>();
-    public DbSet<PreSaleFormProduct> PreSaleFormProducts => Set<PreSaleFormProduct>();
+    public DbSet<PreSaleFormEntity> PreSaleForms { get; set; }
+    public DbSet<PreSaleFormProduct> PreSaleFormProducts { get; set; }
     public DbSet<User> Users { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -84,5 +86,19 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
             entity.HasIndex(x => x.Email)
                 .IsUnique();
         });
+
+        modelBuilder.Entity<Product>()
+            .HasOne(p => p.Category)
+            .WithMany(c => c.Products)
+            .HasForeignKey(p => p.CategoryId)
+            .OnDelete(DeleteBehavior.Cascade);
+            
+        modelBuilder.Entity<Product>()
+            .Property(p => p.PriceWithAssembly)
+            .HasColumnType("decimal(18,2)");
+            
+        modelBuilder.Entity<Product>()
+            .Property(p => p.PriceWithoutAssembly)
+            .HasColumnType("decimal(18,2)");
     }
 }

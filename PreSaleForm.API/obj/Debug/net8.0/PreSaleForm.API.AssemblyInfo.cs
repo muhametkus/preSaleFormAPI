@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreSaleForm.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4bab34bb040517ea65d43153f2fd0425966cb0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3daa44662924fb494d326536eb70a2ef83e638df")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreSaleForm.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreSaleForm.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -455,6 +455,82 @@ public class PdfService : IPdfService
                                     .FontSize(9)
                                     .FontColor("#1F2937");
                             }
+
+                            // Söküm ücreti varsa ek satır ekle
+                            if (form.TotalDismantlingPrice.HasValue && form.TotalDismantlingPrice.Value > 0)
+                            {
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text($"Söküm ({form.OldDoorCount ?? 0} adet)")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text(form.OldDoorCount?.ToString() ?? "-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text("-")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+
+                                table.Cell()
+                                    .Border(1)
+                                    .BorderColor("#D1D5DB")
+                                    .Padding(5)
+                                    .Text($"{form.TotalDismantlingPrice.Value:N0} TL")
+                                    .FontSize(9)
+                                    .FontColor("#1F2937");
+                            }
                         });
                     });
 

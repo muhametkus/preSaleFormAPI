@@ -23,6 +23,7 @@ public static class InfrastructureServiceRegistration
         
         services.AddScoped<IPdfService, PdfService>();
         services.AddScoped<IJwtService, JwtService>();
+        services.AddScoped<IFileUploadService, FileUploadService>();
 
 
 

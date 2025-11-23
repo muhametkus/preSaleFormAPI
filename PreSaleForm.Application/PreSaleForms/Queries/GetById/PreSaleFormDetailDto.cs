@@ -16,5 +16,21 @@ public class PreSaleFormDetailDto
     public DateTime CreatedAt { get; set; }
     public string? PdfUrl { get; set; }
 
+    // Hizmet Bilgileri
+    public bool? MontajDahilMi { get; set; }
+    public bool? NakliyeDahilMi { get; set; }
+    public bool? FabrikaTeslimMi { get; set; }
+
+    // Aksesuar Bilgileri
+    public bool? AksesuarDahilMi { get; set; }
+    public decimal? AksesuarUcreti { get; set; }
+    public decimal? NakliyeUcreti { get; set; }
+    public string? SecilenAksesuar { get; set; }
+
+    // Söküm Bilgileri
+    public int? OldDoorCount { get; set; } // Sökülecek eski kapı adedi
+    public decimal? DismantlingUnitPrice { get; set; } // Söküm ücreti (birim fiyat)
+    public decimal? TotalDismantlingPrice { get; set; } // Toplam söküm ücreti
+
     public List<PreSaleFormProductDto> Products { get; set; }
 }

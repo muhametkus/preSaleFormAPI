@@ -48,6 +48,11 @@ public class UpdatePreSaleFormCommandHandler
         entity.AksesuarUcreti = command.Request.AksesuarUcreti;
         entity.NakliyeUcreti = command.Request.NakliyeUcreti;
         entity.SecilenAksesuar = command.Request.SecilenAksesuar;
+        
+        // Söküm bilgilerini güncelle
+        entity.OldDoorCount = command.Request.OldDoorCount;
+        entity.DismantlingUnitPrice = command.Request.DismantlingUnitPrice;
+        entity.TotalDismantlingPrice = command.Request.TotalDismantlingPrice;
 
         // Mevcut ürünleri temizle
         entity.Products.Clear();

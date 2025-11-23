@@ -42,6 +42,22 @@ public class GetPreSaleFormByIdQueryHandler :
             CreatedAt = form.CreatedAt,
             PdfUrl = form.PdfFilePath,
 
+            // Hizmet Bilgileri
+            MontajDahilMi = form.MontajDahilMi,
+            NakliyeDahilMi = form.NakliyeDahilMi,
+            FabrikaTeslimMi = form.FabrikaTeslimMi,
+
+            // Aksesuar Bilgileri
+            AksesuarDahilMi = form.AksesuarDahilMi,
+            AksesuarUcreti = form.AksesuarUcreti,
+            NakliyeUcreti = form.NakliyeUcreti,
+            SecilenAksesuar = form.SecilenAksesuar,
+
+            // Söküm Bilgileri
+            OldDoorCount = form.OldDoorCount,
+            DismantlingUnitPrice = form.DismantlingUnitPrice,
+            TotalDismantlingPrice = form.TotalDismantlingPrice,
+
             Products = form.Products.Select(p => new PreSaleFormProductDto
             {
                 DoorModel = p.DoorModel,

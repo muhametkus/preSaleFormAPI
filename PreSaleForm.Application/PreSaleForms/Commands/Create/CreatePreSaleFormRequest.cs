@@ -25,5 +25,10 @@ public class CreatePreSaleFormRequest
     public decimal? NakliyeUcreti { get; set; }
     public string? SecilenAksesuar { get; set; }
 
+    // Söküm Bilgileri (opsiyonel)
+    public int? OldDoorCount { get; set; } // Sökülecek eski kapı adedi
+    public decimal? DismantlingUnitPrice { get; set; } // Söküm ücreti (birim fiyat)
+    public decimal? TotalDismantlingPrice { get; set; } // Toplam söküm ücreti
+
     public List<PreSaleFormProductDto> Products { get; set; } = new();
 }
