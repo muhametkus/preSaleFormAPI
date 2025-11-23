@@ -751,4 +751,11 @@ public class PdfService : IPdfService
 
         return Task.FromResult($"/pdf/presale/{fileName}");
     }
+
+    public string GetPdfFilePath(Guid formId)
+    {
+        var fileName = $"PreSale_{formId}.pdf";
+        var folder = Path.Combine(_env.WebRootPath ?? "wwwroot", "pdf", "presale");
+        return Path.Combine(folder, fileName);
+    }
 }

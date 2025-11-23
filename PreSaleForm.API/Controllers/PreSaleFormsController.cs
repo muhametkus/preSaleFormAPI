@@ -8,6 +8,7 @@ using PreSaleForm.Application.PreSaleForms.Commands.GeneratePdf;
 using PreSaleForm.Application.PreSaleForms.Commands.Update;
 using PreSaleForm.Application.PreSaleForms.Queries.GetAll;
 using PreSaleForm.Application.PreSaleForms.Queries.GetById;
+using PreSaleForm.Application.PreSaleForms.Queries.GetPdf;
 
 namespace PreSaleForm.API.Controllers;
 
@@ -47,6 +48,19 @@ public class PreSaleFormsController : ControllerBase
         var cmd = new GeneratePdfCommand { FormId = id };
         var result = await _mediator.Send(cmd, cancellationToken);
         return Ok(result);
+    }
+
+    // GET PDF FILE
+    [HttpGet("{id:guid}/pdf")]
+    public async Task<IActionResult> GetPdf(Guid id, CancellationToken cancellationToken)
+    {
+        var query = new GetPreSaleFormPdfQuery { Id = id };
+        var result = await _mediator.Send(query, cancellationToken);
+
+        if (result == null)
+            return NotFound("PDF dosyası bulunamadı. Önce 'Generate PDF' işlemini yapınız.");
+
+        return File(result.FileContent, result.ContentType, result.FileName);
     }
 
     // GET ALL
