@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreSaleForm.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3daa44662924fb494d326536eb70a2ef83e638df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1317653753664d6663055234f1fcaa945532cb39")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreSaleForm.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreSaleForm.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

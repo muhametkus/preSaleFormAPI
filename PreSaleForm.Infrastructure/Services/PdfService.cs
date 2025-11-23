@@ -23,13 +23,15 @@ public class PdfService : IPdfService
     {
         QuestPDF.Settings.License = LicenseType.Community;
 
-        var folder = Path.Combine(_env.WebRootPath ?? "wwwroot", "pdf", "presale");
-        Directory.CreateDirectory(folder);
-
         var fileName = $"PreSale_{form.Id}.pdf";
-        var filePath = Path.Combine(folder, fileName);
 
-        var logoPath = Path.Combine(_env.WebRootPath ?? "wwwroot", "logo.png");
+        string webRootPath = _env.WebRootPath;
+        if (string.IsNullOrEmpty(webRootPath))
+        {
+            webRootPath = Path.Combine(_env.ContentRootPath, "wwwroot");
+        }
+
+        var logoPath = Path.Combine(webRootPath, "logo.png");
         bool hasLogo = File.Exists(logoPath);
 
         var document = Document.Create(container =>
@@ -747,6 +749,9 @@ public class PdfService : IPdfService
             });
         });
 
+        var folder = GetPdfFolderPath();
+        var filePath = Path.Combine(folder, fileName);
+
         document.GeneratePdf(filePath);
 
         return Task.FromResult($"/pdf/presale/{fileName}");
@@ -755,7 +760,26 @@ public class PdfService : IPdfService
     public string GetPdfFilePath(Guid formId)
     {
         var fileName = $"PreSale_{formId}.pdf";
-        var folder = Path.Combine(_env.WebRootPath ?? "wwwroot", "pdf", "presale");
+        var folder = GetPdfFolderPath();
         return Path.Combine(folder, fileName);
+    }
+
+    private string GetPdfFolderPath()
+    {
+        string webRootPath = _env.WebRootPath;
+
+        if (string.IsNullOrEmpty(webRootPath))
+        {
+            webRootPath = Path.Combine(_env.ContentRootPath, "wwwroot");
+        }
+
+        var folder = Path.Combine(webRootPath, "pdf", "presale");
+
+        if (!Directory.Exists(folder))
+        {
+            Directory.CreateDirectory(folder);
+        }
+
+        return folder;
     }
 }
