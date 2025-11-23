@@ -208,6 +208,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\pdf\presale\PreSale_92def4fd-4ad6-410a-b84b-a0dabb6295c0.pdf))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\pdf\presale\PreSale_a5726842-3088-4b58-9367-49a4e3ee30b6.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>PreSaleForm.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PreSaleForm.API</BasePath>
+      <RelativePath>pdf/presale/PreSale_a5726842-3088-4b58-9367-49a4e3ee30b6.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\pdf\presale\PreSale_a5726842-3088-4b58-9367-49a4e3ee30b6.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\pdf\presale\PreSale_b3bb6f7d-b44c-4959-9179-af8b15f6eea8.pdf))">
       <SourceType>Package</SourceType>
       <SourceId>PreSaleForm.API</SourceId>

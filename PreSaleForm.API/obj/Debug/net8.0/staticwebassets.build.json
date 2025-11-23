@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TWGUs8NP042g7PdbKC7jdlZuEjDSGfpbWT23O9wHx1I=",
+  "Hash": "rwv5wpO3jJwxnSzBg3+OaQMjmxArHjlvnr6HSffB23Q=",
   "Source": "PreSaleForm.API",
   "BasePath": "_content/PreSaleForm.API",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/pdf/presale/PreSale_92def4fd-4ad6-410a-b84b-a0dabb6295c0.pdf"
+    },
+    {
+      "Identity": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_a5726842-3088-4b58-9367-49a4e3ee30b6.pdf",
+      "SourceId": "PreSaleForm.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.API/wwwroot/",
+      "BasePath": "_content/PreSaleForm.API",
+      "RelativePath": "pdf/presale/PreSale_a5726842-3088-4b58-9367-49a4e3ee30b6.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/pdf/presale/PreSale_a5726842-3088-4b58-9367-49a4e3ee30b6.pdf"
     },
     {
       "Identity": "/Users/muhammetkus/RiderProjects/preSaleFormAPI/PreSaleForm.API/wwwroot/pdf/presale/PreSale_b3bb6f7d-b44c-4959-9179-af8b15f6eea8.pdf",

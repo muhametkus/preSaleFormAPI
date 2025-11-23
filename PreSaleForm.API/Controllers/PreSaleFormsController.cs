@@ -39,7 +39,6 @@ public class PreSaleFormsController : ControllerBase
     }
 
     // GENERATE PDF
-    [Authorize]
     [HttpPost("{id:guid}/generate-pdf")]
     public async Task<ActionResult<GeneratePdfResponse>> GeneratePdf(
         Guid id,
@@ -74,7 +73,6 @@ public class PreSaleFormsController : ControllerBase
     }
 
     // GET BY ID
-    [Authorize]
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<PreSaleFormDetailDto>> GetById(Guid id, CancellationToken cancellationToken)
     {
