@@ -15,7 +15,11 @@ public static class InfrastructureServiceRegistration
     {
         // PostgreSQL bağlantısı
         services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"),
+                builder => builder.EnableRetryOnFailure(
+                    maxRetryCount: 5,
+                    maxRetryDelay: TimeSpan.FromSeconds(10),
+                    errorCodesToAdd: null)));
 
         // DbContext interface binding (Application katmanı kullanacak)
         services.AddScoped<IApplicationDbContext>(provider =>
